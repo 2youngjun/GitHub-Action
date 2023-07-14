@@ -21,9 +21,9 @@ jobs:
         python-version: ${{ matrix.python-version}}
     - name: Run Python
       run: |
-        python3 printVersion.py
+        python3 printVersion.py > result.txt
     - name: Save output artifact
       uses: actions/upload-artifact@v3
       with:
-        name: result
-        path: build/result
+        name: artifact
+        path: result.txt
