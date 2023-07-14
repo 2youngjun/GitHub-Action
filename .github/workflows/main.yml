@@ -22,5 +22,5 @@ jobs:
     - name: Save output artifact
       uses: actions/upload-artifact@v3
       with:
-        name: python_output_${{ matrix.python-version}}
-        path: printVersion_output.txt
+        name: my-artifact
+        path: my_file.txt
