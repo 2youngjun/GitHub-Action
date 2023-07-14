@@ -22,5 +22,5 @@ jobs:
     - name: Save output artifact
       uses: actions/upload-artifact@v3
       with:
-        name: my-artifact
-        path: my_file.txt
+        name: build
+        path: python-result.txt
