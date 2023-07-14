@@ -7,6 +7,9 @@ on:
 jobs:
   build:	
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ./build
     strategy:
       matrix:
         python-version: ['3.8', '3.9', '3.10']
@@ -23,4 +26,4 @@ jobs:
       uses: actions/upload-artifact@v3
       with:
         name: result
-        path: build
+        path: build/result
