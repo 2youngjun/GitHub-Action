@@ -20,7 +20,7 @@ jobs:
       run: |
         python3 printVersion.py
     - name: Save output artifact
-      uses: actions/download-artifact@v3
+      uses: actions/upload-artifact@v3
       with:
         name: python_output
         path: printVersion_output.txt
